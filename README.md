@@ -4,13 +4,13 @@ Allows users to manage a system that provides information regarding matatu trans
 
 ## Key Features
 
-- Allows users to view all areas within Nairobi.
-- Allows users to view routes within Nairobi.
-- Allows users to view all stages within a specified area.
-- Allows users to view all stages functioning in a specified route.
+- Allows users to view all areas with operating matatu routes within Nairobi.
+- Allows users to view matatu routes within Nairobi.
+- Allows users to view all matatu stages within a specified area.
+- Allows users to view all matatu stages functioning in a specified route.
 - Allows users to add and/or remove a stage.
-- Allows users to create a new route.
-- Allows users to add a new area.
+- Allows users to create a new matatu route.
+- Allows users to add a new area with operating matatu routes.
 
 ## ERD Diagram
 
