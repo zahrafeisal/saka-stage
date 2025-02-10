@@ -3,7 +3,8 @@
 from models.area import Area
 from models.route import Route
 from models.stage import Stage
-from helpers import get_stages_in_area, get_stages_in_route, add_stage, remove_stage, create_route, exit_program, all_areas, all_routes
+from helpers import (get_stages_in_area, get_stages_in_route, add_stage, remove_stage, create_route,
+                     exit_program, all_areas, all_routes, create_area, delete_area)
 
 def display_menu():
     print("\n---- Saka Stage Management System ----")
@@ -16,6 +17,8 @@ def display_menu():
     print("5. Add stage")
     print("6. Remove stage in area/route")
     print("7. Create new route")
+    print("8. Add area")
+    print("9. Remove area")
 
 def main():
     Area.create_table()
@@ -40,6 +43,10 @@ def main():
             remove_stage()
         elif choice == "7":
             create_route()
+        elif choice == "8":
+            create_area()
+        elif choice == "9":
+            delete_area()
         elif choice == "0":
             exit_program()
             break

@@ -49,6 +49,19 @@ class Area:
         return area
     
 
+    def delete(self):
+        """ Delete the table row corresponding to the current Area instance. """
+        sql = """
+            DELETE FROM areas
+            WHERE id = ?
+        """
+        CURSOR.execute(sql, (self.id,))
+        CONN.commit()
+
+        del type(self).all[self.id]
+        self.id = None
+    
+
     @classmethod
     def instance_from_db(cls, row):
         """ Return an Area object having the attributes from the corresponding table row. """

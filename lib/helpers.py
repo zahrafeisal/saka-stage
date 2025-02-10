@@ -77,6 +77,22 @@ def create_route():
 
     print(f"{route_name} route added successfully.")
 
+def create_area():
+    area_name = input("Enter the name of the area: ")
+    Area.create(area_name)
+
+    print(f"{area_name} area added successfully.")
+
+def delete_area():
+    area_id = valid_id("Enter area ID: ")
+    area = Area.find_by_id(area_id)
+
+    if area:
+        area.delete()
+        print(f"{area.name} has been deleted successfully.")
+    else:
+        print("No area found.")
+
 def exit_program():
     print("Exiting the program. Goodbye!")
     exit()
