@@ -103,7 +103,7 @@ class Area:
 
     def stages(self):
         """ Return a list of Stages associated with current Area instance. """
-        from stage import Stage
+        from .stage import Stage
         sql = """
             SELECT *
             FROM stages

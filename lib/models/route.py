@@ -104,7 +104,7 @@ class Route:
 
     def stages(self):
         """ Return a list of Stages associated with current Route instance. """
-        from stage import Stage
+        from .stage import Stage
         sql = """
             SELECT *
             FROM stages

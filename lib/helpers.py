@@ -83,16 +83,6 @@ def create_area():
 
     print(f"{area_name} area added successfully.")
 
-def delete_area():
-    area_id = valid_id("Enter area ID: ")
-    area = Area.find_by_id(area_id)
-
-    if area:
-        area.delete()
-        print(f"{area.name} has been deleted successfully.")
-    else:
-        print("No area found.")
-
 def exit_program():
     print("Exiting the program. Goodbye!")
     exit()
