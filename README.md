@@ -14,6 +14,8 @@ Allows users to manage a system that provides information regarding matatu trans
 
 ## ERD Diagram
 
+![alt text](stageERD.png)
+
 ## Installation
 
 Fork and clone this repository then run:
@@ -22,7 +24,7 @@ Fork and clone this repository then run:
 pipenv install
 pipenv shell
 ```
-to install dependencies required.
+to install dependencies required and create a virtual environment.
 
 ## Set-up
 
