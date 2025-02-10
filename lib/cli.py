@@ -1,4 +1,5 @@
-# lib/cli.py
+#!/usr/bin/env python3 
+
 from models.area import Area
 from models.route import Route
 from models.stage import Stage

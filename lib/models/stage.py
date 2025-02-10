@@ -1,6 +1,6 @@
-from __init__ import CURSOR, CONN
-from area import Area
-from route import Route
+from . import CURSOR, CONN
+from .area import Area
+from .route import Route
 
 class Stage:
 
@@ -46,7 +46,7 @@ class Stage:
             raise ValueError("Route ID must be an integer.")
 
     @classmethod
-    def create_table():
+    def create_table(cls):
         """ Create a new table to persist attributes of Stage instances. """
         sql = """
             CREATE TABLE IF NOT EXISTS stages (

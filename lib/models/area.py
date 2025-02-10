@@ -1,4 +1,4 @@
-from __init__ import CURSOR, CONN
+from . import CURSOR, CONN
 
 class Area:
 
@@ -21,7 +21,7 @@ class Area:
 
 
     @classmethod
-    def create_table():
+    def create_table(cls):
         """ Create a new table to persist attributes of Area instances. """
         sql = """
             CREATE TABLE IF NOT EXISTS areas (
